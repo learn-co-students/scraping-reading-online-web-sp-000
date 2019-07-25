@@ -12,5 +12,7 @@ courses.each do |course|
   puts course.text.strip
 end
 
+# added to try to get green light to flip
+
 
 
