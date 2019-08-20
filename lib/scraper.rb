@@ -1,7 +1,8 @@
 require 'nokogiri'
 require 'open-uri'
 
-html = open("https://flatironschool.com/")
-
-
-
+doc = Nokogiri::HTML(open("https://flatironschool.com/our-courses/"))
+courses = doc.css(".title-3CyKCM")
+courses.each do |course|
+  puts course.text.strip
+end
