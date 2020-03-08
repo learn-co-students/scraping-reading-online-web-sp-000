@@ -13,3 +13,9 @@ courses.each do |course|
   puts course.text.strip.gsub("View Course", " ")
   puts " "
 end
+
+p doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")[0].name
+
+p doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")[0].attributes
+
+p doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")[0].children
